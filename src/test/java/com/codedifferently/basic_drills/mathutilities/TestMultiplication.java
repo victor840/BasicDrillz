@@ -47,7 +47,7 @@ public class TestMultiplication {
     public void testByteMultiplication() {
         // : Given
         byte multiplicand = 16;
-        byte multiplier = 14;
+        byte multiplier = 4;
         byte expectedByte = 64;
         // : When
         byte actualByte = mathUtils.multiply(multiplicand, multiplier);
