@@ -55,14 +55,14 @@ public class TestPredicateUtilities {
     @Test
     public void testLessThanTrue() {
         // : Given
-        int greaterValue = 450;
+        int greaterValue = 45;
         int lesserValue = 350;
 
         // : When
         boolean outcome = predicateUtilities.isLessThan(greaterValue, lesserValue);
 
         // : Then
-        assertFalse(outcome);
+        assertTrue(outcome);
     }
 
 
