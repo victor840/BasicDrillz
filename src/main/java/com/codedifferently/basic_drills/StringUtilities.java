@@ -1,6 +1,7 @@
 package com.codedifferently.basic_drills;
 
 
+
 public class StringUtilities {
     /**
      * @return `Hello World` as a string
@@ -59,7 +60,8 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
-        return null;
+       char [] middleValue = inputValue.toCharArray();
+        return middleValue[3];
     }
 
     /**
@@ -85,6 +87,12 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+        String reverseString = "";
+
+        for(int  i = stringToReverse.length() - 1; i >= 0; i--){
+            System.out.println(stringToReverse.charAt(i));
+           reverseString = reverseString + stringToReverse.charAt(i);
+        }
+        return reverseString;
     }
 }
