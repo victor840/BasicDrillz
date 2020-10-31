@@ -38,7 +38,7 @@ public class TestPredicateUtilities {
     }
 
 
-   /* @Test
+    @Test
     public void testGreaterThanFalse() {
         // : Given
         int greaterValue = 350;
@@ -49,14 +49,14 @@ public class TestPredicateUtilities {
 
         // : Then
         assertFalse(outcome);
-    } */
+    }
 
 
     @Test
     public void testLessThanTrue() {
         // : Given
-        int greaterValue = 45;
-        int lesserValue = 350;
+        int greaterValue = 350;
+        int lesserValue = 450;
 
         // : When
         boolean outcome = predicateUtilities.isLessThan(greaterValue, lesserValue);
@@ -66,7 +66,7 @@ public class TestPredicateUtilities {
     }
 
 
-   /* @Test
+    @Test
     public void testLessThanFalse() {
         // : Given
         int greaterValue = 450;
@@ -77,7 +77,7 @@ public class TestPredicateUtilities {
 
         // : Then
         assertFalse(outcome);
-    } */
+    }
 
 
     @Test
@@ -93,10 +93,10 @@ public class TestPredicateUtilities {
         assertTrue(outcome);
     }
 
- /*   @Test
+   @Test
     public void testLessOrEqualFalse() {
         // : Given
-        int greaterValue = 3;
+        int greaterValue = 7;
         int lesserValue = 6;
 
         // : When
@@ -104,7 +104,7 @@ public class TestPredicateUtilities {
 
         // : Then
         assertFalse(outcome);
-    } */
+    }
 
     @Test
     public void testGreaterOrEqualTrue() {
@@ -118,10 +118,10 @@ public class TestPredicateUtilities {
         // : ThenP
         assertTrue(outcome);
     }
-}
 
 
-   /* @Test
+
+   @Test
     public void testGreaterOrEqualFalse() {
         // : Given
         int greaterValue = 8;
@@ -133,4 +133,4 @@ public class TestPredicateUtilities {
         // : Then
         assertFalse(outcome);
     }
-} */
+}
